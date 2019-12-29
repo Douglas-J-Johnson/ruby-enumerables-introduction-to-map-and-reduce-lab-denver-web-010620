@@ -53,7 +53,7 @@ def reduce_to_total (source_array, starting_point=0)
 
   if source_array
     for i in starting_point...source_array.length
-
+      total = total + source_array[i]
     end
   end
 
@@ -64,10 +64,14 @@ def reduce_to_all_true (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      if source_array
+      else
+        return false
+      end
     end
   end
 
+  return true
 end
 
 def reduce_to_any_true (source_array)
