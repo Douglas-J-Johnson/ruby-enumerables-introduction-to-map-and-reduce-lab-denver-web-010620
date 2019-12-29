@@ -64,7 +64,7 @@ def reduce_to_all_true (source_array)
 
   if source_array
     for i in 0...source_array.length
-      if source_array
+      if source_array[i]
       else
         return false
       end
@@ -78,8 +78,11 @@ def reduce_to_any_true (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      if source_array[i]
+        return true
+      end
     end
   end
 
+  return false
 end
