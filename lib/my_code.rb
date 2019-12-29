@@ -23,19 +23,15 @@ def map_to_square (source_array)
 end
 
 def reduce_to_total (source_array, starting_point)
-  return_array = []
+  total = 0
 
-  return return_array
+  return total
 end
 
 def reduce_to_all_true (source_array)
-  return_array = []
-
-  return return_array
+  
 end
 
 def reduce_to_any_true (source_array)
-  return_array = []
-
-  return return_array
+  
 end
