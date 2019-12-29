@@ -49,12 +49,12 @@ end
 
 #REDUCE - return a SCALAR
 def reduce_to_total (source_array, starting_point=0)
-  total = 0
+  total = 0 + starting_point
 
   puts starting_point
 
   if source_array
-    for i in starting_point...source_array.length
+    for i in 0...source_array.length
       total = total + source_array[i]
     end
   end
