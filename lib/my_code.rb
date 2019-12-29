@@ -51,6 +51,8 @@ end
 def reduce_to_total (source_array, starting_point=0)
   total = 0
 
+  puts starting_point
+
   if source_array
     for i in starting_point...source_array.length
       total = total + source_array[i]
