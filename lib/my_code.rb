@@ -4,7 +4,7 @@ def map_to_negativize (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      return_array[i] = source_array[i] * -1
     end
   end
 
@@ -16,7 +16,7 @@ def map_to_no_change (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      return_array[i] = source_array[i]
     end
   end
 
@@ -28,7 +28,7 @@ def map_to_double (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      return_array[i] = source_array[i] * 2
     end
   end
 
@@ -40,7 +40,7 @@ def map_to_square (source_array)
 
   if source_array
     for i in 0...source_array.length
-
+      return_array[i] = source_array[i] ** 2
     end
   end
 
@@ -48,12 +48,12 @@ def map_to_square (source_array)
 end
 
 #REDUCE - return a SCALAR
-def reduce_to_total (source_array, starting_point)
+def reduce_to_total (source_array, starting_point=0)
   total = 0
 
   if source_array
     for i in 0...source_array.length
-
+      
     end
   end
 
